@@ -1,11 +1,11 @@
-package com.example.demo.repository;
+package com.example.annictUtil.repository;
 
 import annict.UserQuery;
 import annict.type.StatusState;
 import com.apollographql.apollo.ApolloClient;
 import com.apollographql.apollo.api.Response;
 import com.apollographql.apollo.rx3.Rx3Apollo;
-import com.example.demo.properties.AnnictProperties;
+import com.example.annictUtil.properties.AnnictProperties;
 import okhttp3.OkHttpClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;

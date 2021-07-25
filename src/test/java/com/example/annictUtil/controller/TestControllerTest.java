@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.annictUtil.controller;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

@@ -1,10 +1,10 @@
-package com.example.demo.controller;
+package com.example.annictUtil.controller;
 
 import annict.UserQuery;
-import com.example.demo.model.BindResultDto;
-import com.example.demo.model.NodeDto;
-import com.example.demo.model.ValidTest;
-import com.example.demo.repository.AnnictRepository;
+import com.example.annictUtil.model.BindResultDto;
+import com.example.annictUtil.model.NodeDto;
+import com.example.annictUtil.model.ValidTest;
+import com.example.annictUtil.repository.AnnictRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;

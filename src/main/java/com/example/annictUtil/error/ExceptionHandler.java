@@ -1,6 +1,6 @@
-package com.example.demo.error;
+package com.example.annictUtil.error;
 
-import com.example.demo.model.Error;
+import com.example.annictUtil.model.Error;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
