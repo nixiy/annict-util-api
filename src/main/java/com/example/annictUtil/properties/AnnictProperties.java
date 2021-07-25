@@ -10,4 +10,5 @@ import org.springframework.stereotype.Component;
 public class AnnictProperties {
     private String accessToken;
     private String graphqlEndpoint;
+    private long readTimeoutMs;
 }

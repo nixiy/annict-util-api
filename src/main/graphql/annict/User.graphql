@@ -2,8 +2,6 @@ query User($username: String!, $state: StatusState) {
   user(username: $username) {
     works(state: $state) {
       nodes {
-        annictId
-        officialSiteUrl
         title
         viewerStatusState
       }
