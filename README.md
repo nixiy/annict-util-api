@@ -3,12 +3,15 @@
 ## 目的
 - Spring bootの練習
 - GraphQLに慣れる
-  - Apollo Clientも合わせて
+  - [x] Apollo Clientに食わせるQueryを書けるようになる
+  - [x] Apollo Clientのレスポンスを同期的に待つ
 - Annictにおいて、以下のような事がやりたくなったためApiを組み合わせてどうにかできないか施行
-  - 見終わった作品のAND, OR
-    - で、お互い視聴完了した作品って何なんだっけという場面が多々ある
-  - 相手ユーザのみステータスが存在する作品の発掘
-  - 視聴傾向が似ているユーザの発掘
+  - [x] 作品ステータスが同一 or 異なる
+    - お互い視聴完了した作品って何なんだっけという場面が多々ある
+  - [x] 相手ユーザのみステータスが存在する作品の発掘
+  - [ ] 視聴傾向が似ているユーザの発掘
+    - 似ているとは何なのかの定義
+    - 視聴記録が一致している作品数 / 視聴記録数 ?
   - etc...
   
 
@@ -52,6 +55,15 @@ Apollo Client においては作成したgraphqlファイルからクラスを�
   --header="Authorization: Bearer ${TOKEN}"
 ```
 
+### リクエストのタイムアウト
+OkHttpのデフォルト値では、`connectTimeout`, `readTimeout`, `writeTimeout` がそれぞれ10000(ms) で設定されているようである。
+
+※ [OkHttpClient.Builder][okhttp]のページで`10 seconds.`で検索をかけてもらうとヒットする
+
+ステータスが大量にあるユーザだと、上記の秒数に収まらないため、一旦タイムアウト値を20000(ms)としている
+- そもそもこれは、一度に取得する件数の上限を設けるなどの対応が妥当かもしれない
+
 [comment]: <> (リンク類)
 [Altair]: https://github.com/altair-graphql/altair
 [Token]: https://developers.annict.jp/graphql-api/personal-access-token/#%E3%83%88%E3%83%BC%E3%82%AF%E3%83%B3%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B
+[okhttp]: https://square.github.io/okhttp/3.x/okhttp/okhttp3/OkHttpClient.Builder.html
