@@ -1,5 +1,7 @@
 # Annict APIをラッピングしたAPIを作ってみる
 
+[![CodeQL](https://github.com/nixiy/annict-util-api/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/nixiy/annict-util-api/actions/workflows/codeql-analysis.yml)
+
 ## 目的
 - Spring bootの練習
 - GraphQLに慣れる
